@@ -1,0 +1,18 @@
+<section class="hero">
+  <div class="hero-body">
+    <div class="columns is-mobile is-tablet">
+      <div class="column is-four-fifths">
+        <header class="has-text-centered">
+          <h1 class='title is-1'>{{ title }}</h1>
+        </header>
+        <app-form (clearSign)="setSignature()" [signature]="completedSignature"></app-form>
+        <!-- <app-identification></app-identification> -->
+        <app-signature (formSigned)="setSignature($event)"></app-signature>
+        <app-actions></app-actions>
+      </div>
+      <div class="column">
+        <app-languages></app-languages>
+      </div>
+    </div>
+  </div>
+</section>

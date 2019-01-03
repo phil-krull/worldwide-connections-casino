@@ -1,0 +1,38 @@
+<section *ngIf="translatedForm" class="section">
+    <div class="amount_box">
+        <label for="amount_won">
+            1 {{ translatedForm.formFields.amount_won.value }}
+        </label>
+        <input (change)="updateForm()" type="number" [(ngModel)]="form.amount_won" name="amount_won" id="amount_won">
+    </div>
+    <div class="date_won">
+        <label for="date">
+            2 {{ translatedForm.formFields.date.value }}
+        </label>
+        <input (change)="updateForm()" type="date" [(ngModel)]="form.date" name="date" id="date">
+    </div>
+    <div class="winner_name">
+        <label for="winner_name">
+            {{ translatedForm.formFields.name.value }}
+        </label>
+        <input (change)="updateForm()" type="text" [(ngModel)]="form.name" name="winner_name" id="winner_name">
+    </div>
+    <div class="winner_address">
+        <label for="winner_address">
+            {{ translatedForm.formFields.address.value }}
+        </label>
+        <input (change)="updateForm()" type="text" [(ngModel)]="form.address" name="winner_address" id="winner_address">
+    </div>
+    <div class="winner_location">
+        <label for="winner_location">
+            {{ translatedForm.formFields.location.value }}
+        </label>
+        <input (change)="updateForm()" type="text" [(ngModel)]="form.location" name="winner_location" id="winner_location">
+    </div>
+    <div *ngIf="signature" class="box signature">
+        <img [src]="signature" alt="Signature">
+    </div>
+    <div class="container">
+        <button (click)="setForm()" class="button is-small is-info is-inverted">Clear Form</button>
+    </div>
+</section>
