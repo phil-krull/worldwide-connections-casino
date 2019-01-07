@@ -8,10 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'XXXX Casino';
   completedSignature: any;
+  signedForm: boolean = false;
 
   setSignature(signature?: any):void {
     console.log(`in app component signForm`);
     this.completedSignature = signature;
+    if(signature) {
+      this.signedForm = true;
+    } else {
+      this.signedForm = false;
+    }
   }
 
 }

@@ -18,8 +18,8 @@ export class SignatureComponent implements OnInit {
 
   private signaturePadOptions: Object = { // passed through to szimek/signature_pad constructor
     'minWidth': 2,
-    'canvasWidth': 700,
-    'canvasHeight': 100
+    'canvasWidth': 500,
+    'canvasHeight': 60
   };
 
   clear() {

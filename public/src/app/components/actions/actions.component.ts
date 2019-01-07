@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { PdfService } from 'src/app/services/pdf.service';
 
 @Component({
@@ -7,7 +7,7 @@ import { PdfService } from 'src/app/services/pdf.service';
   styleUrls: ['./actions.component.scss']
 })
 export class ActionsComponent implements OnInit {
-
+  @Input() isSigned:boolean;
   constructor(private _pdf: PdfService) { }
 
   ngOnInit() {
@@ -18,7 +18,11 @@ export class ActionsComponent implements OnInit {
   }
 
   print() {
-    this._pdf.printPDF();
+    if(this.isSigned) {
+      this._pdf.printPDF();
+    } else {
+      alert('Please sign and submit form')
+    }
     console.log('in print');
   }
 
@@ -27,7 +31,11 @@ export class ActionsComponent implements OnInit {
   }
 
   download() {
-    this._pdf.downloadPDF();
+    if(this.isSigned) {
+      this._pdf.downloadPDF();
+    } else {
+      alert('Please sign and submit form')
+    }
     console.log('in download');
   }
 

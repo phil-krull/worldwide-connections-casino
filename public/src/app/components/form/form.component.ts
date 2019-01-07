@@ -21,10 +21,14 @@ export class FormComponent implements OnInit {
     this.setForm();
     console.log(this.translatedForm);
   }
-
+  // will be called when each form field is filled in change event
   updateForm() {
-    this._pdf.updatePDF(this.form);
     console.log("changed");
+  }
+  // after form is submitted, disabled until the form is signed
+  createPDF() {
+    this._pdf.updatePDF(this.form);
+    console.log('pdf created');
   }
 
   setForm() {

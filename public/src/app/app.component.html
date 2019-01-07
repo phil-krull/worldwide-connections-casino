@@ -8,7 +8,7 @@
         <app-form (clearSign)="setSignature()" [signature]="completedSignature"></app-form>
         <!-- <app-identification></app-identification> -->
         <app-signature (formSigned)="setSignature($event)"></app-signature>
-        <app-actions></app-actions>
+        <app-actions [isSigned]="signedForm"></app-actions>
       </div>
       <div class="column">
         <app-languages></app-languages>
