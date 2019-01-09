@@ -4,10 +4,10 @@
             <signature-pad class="box is-paddingless" [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
             <div class="field is-grouped">
                 <p class="control">
-                    <button (click)="clear()" class="button is-info is-small">Clear</button>
+                    <button (click)="clear()" class="button is-info is-small is-rounded">{{ actions.SignatureButton2}}</button>
                 </p>
                 <p class="control">
-                    <button (click)="signForm()" class="button is-info is-small">Sign Form</button>
+                    <button (click)="signForm()" class="button is-info is-small is-rounded">{{ actions.SignatureButton1}}</button>
                 </p>
             </div>
         <!-- </div> -->

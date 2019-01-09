@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter, Input } from '@angular/core';
 import { SignaturePad } from 'angular2-signaturepad/signature-pad';
 import { PdfService } from 'src/app/services/pdf.service';
+import { TranslationService } from 'src/app/services/translation.service';
 
 @Component({
   selector: 'app-signature',
@@ -10,8 +11,9 @@ import { PdfService } from 'src/app/services/pdf.service';
 export class SignatureComponent implements OnInit {
   @ViewChild(SignaturePad) signaturePad: SignaturePad;
   @Output() formSigned = new EventEmitter();
+  @Input() actions:any;
 
-  constructor(private _pdf: PdfService) { }
+  constructor(private _pdf: PdfService, private _translation: TranslationService) { }
 
   ngOnInit() {
   }
@@ -31,6 +33,7 @@ export class SignatureComponent implements OnInit {
   signForm() {
     this._pdf.signForm(this.signaturePad.toDataURL());
     console.log(this.signaturePad);
+    this._translation.setIsSigned(true);
     this.formSigned.emit(this.signaturePad.toDataURL());
     this.clear();
   }

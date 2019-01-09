@@ -195,14 +195,17 @@
             {{ selectedLanguage.Disclaimer }}
         </p>
     </div>
-    <div class="c1 r17 h3 w5">
+    <div *ngIf="signature" class="c1 r17 h3 w5">
         <p>{{ selectedLanguage.Signature }}</p>
     </div>
     <div *ngIf="signature" class="c2 r20 h3">
         <img class=".signature" [src]="signature" alt="Signature">
     </div>
-    <div class="c8 r17 h3 w1">
+    <div *ngIf="signature" class="c8 r17 h3 w1">
         <p>{{ selectedLanguage.Date }}</p>
+    </div>
+    <div class="c9 r17 h3 w1">
+        <p>{{ dateSigned }}</p>
     </div>
     <div class="c2 r18 h6 w9 has-text-right">
         <p>{{ selectedLanguage.Bottom1a }}</p>
@@ -217,11 +220,11 @@
         <p>{{ selectedLanguage.Bottom4 }}</p>
     </div>
 </section>
-<div class="field is-grouped">
+<!-- <div class="field is-grouped">
     <p class="control">
         <a (click)="setForm()" class="button is-small is-light">Clear Form</a>
     </p>
     <p class="control">
         <button (click)="createPDF()" class="button is-small is-info" [disabled]="!signature">Submit Form</button>
     </p>
-</div>
+</div> -->

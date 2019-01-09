@@ -61,7 +61,11 @@ export class TranslatedForm {
                 "Bottom1a":"Form W-2G",
                 "Bottom2":"Cat. No. 10138V",
                 "Bottom3":"www.irs.gov/FormW2G",
-                "Bottom4":"Department of the Treasury - Internal Revenue Service"
+                "Bottom4":"Department of the Treasury - Internal Revenue Service",
+                "SignatureButton1": "Save",
+                "SignatureButton2": "Clear signature",
+                "SaveButton": "Submit",
+                "ClearButton": "Clear form"
             },
             "french": {
                 "Void": "NUL",
@@ -104,7 +108,11 @@ export class TranslatedForm {
                 "Bottom1a": "Formulaire  W-2G",
                 "Bottom2": "Cat. No. 10138V",
                 "Bottom3": "www.irs.gov/FormW2G",
-                "Bottom4": "Département du Trésor - Internal Revenue Service"
+                "Bottom4": "Département du Trésor - Internal Revenue Service",
+                "SignatureButton1": "Sauvegarder",
+                "SignatureButton2": "Effacer la signature",
+                "SaveButton": "Submit",
+                "ClearButton": "Clear form"
             },
             "german": {
                 "Void": "UNGÜLTIG",
@@ -150,7 +158,11 @@ export class TranslatedForm {
                 "Bottom1a":	"Formular W-2G ",
                 "Bottom2": "Cat. No. 10138V",
                 "Bottom3": "www.irs.gov/FormW2G",
-                "Bottom4": "Abteilung des Finanzministeriums - Internal Revenue Service"
+                "Bottom4": "Abteilung des Finanzministeriums - Internal Revenue Service",
+                "SignatureButton1": "Speichern",
+                "SignatureButton2": "Signatur löschen",
+                "SaveButton": "Submit",
+                "ClearButton": "Clear form"
             },
             "chinese": {
                 "Void": "无效",
@@ -196,7 +208,11 @@ export class TranslatedForm {
                 "Bottom1a": "W-2G 表格",
                 "Bottom2": "Cat. No. 10138V",
                 "Bottom3": "www.irs.gov/FormW2G",
-                "Bottom4": "Department of the Treasury - Internal Revenue Service"
+                "Bottom4": "Department of the Treasury - Internal Revenue Service",
+                "SignatureButton1": "保存信息",
+                "SignatureButton2": "删除签名",
+                "SaveButton": "Submit",
+                "ClearButton": "Clear form"
             }
         }
     }

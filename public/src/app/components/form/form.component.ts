@@ -10,16 +10,18 @@ import { TranslatedForm } from 'src/app/classes/translated-form';
   styleUrls: ['./form.component.scss']
 })              
 export class FormComponent implements OnInit {
-  form: Form = new Form();
+  @Input() form: Form;
   translatedForm: TranslatedForm;
   @Input() selectedLanguage: any;
+  @Input() dateSigned: string;
   @Input() signature: any;
   @Output() clearSign = new EventEmitter();
 
   constructor(private _pdf: PdfService, private _translation: TranslationService) { }
 
   ngOnInit() {
-    this.setForm();
+    // this.setForm();
+    this.translatedForm = this._translation.getForm();
     console.log(this.translatedForm);
   }
   // will be called when each form field is filled in change event
@@ -27,11 +29,12 @@ export class FormComponent implements OnInit {
     console.log("changed");
   }
   // after form is submitted, disabled until the form is signed
+  // moved to action
   createPDF() {
     this._pdf.updatePDF(this.form);
     console.log('pdf created');
   }
-
+  // move to action
   setForm() {
     this._pdf.clearPDF();
     this.translatedForm = new TranslatedForm();

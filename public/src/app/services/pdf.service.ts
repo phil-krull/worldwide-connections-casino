@@ -9,6 +9,7 @@ import { Form } from '../classes/form.js';
 export class PdfService {
 
   pdf: jspdf;
+  isSubmitted: boolean = false;
 
   constructor() { 
     console.log('in constructor in service');
@@ -22,23 +23,32 @@ export class PdfService {
   }
 
   printPDF():void {
-    console.log(this.pdf);
-    console.log(this.pdf.output('blob'));
-    // const blob = new Blob([this.pdf.output('blob')]);
-    // const blobUrl = URL.createObjectURL(blob);
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = this.pdf.output('bloburl');
-    document.body.appendChild(iframe);
-    iframe.contentWindow.print();
+    if(this.isSubmitted) {
+      console.log(this.pdf);
+      console.log(this.pdf.output('blob'));
+      // const blob = new Blob([this.pdf.output('blob')]);
+      // const blobUrl = URL.createObjectURL(blob);
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = this.pdf.output('bloburl');
+      document.body.appendChild(iframe);
+      iframe.contentWindow.print();
+    } else {
+      alert('Please submit form');
+    }
   }
 
   downloadPDF():void {
-    this.pdf.save('completedForm.pdf');
+    if(this.isSubmitted) {
+      this.pdf.save('completedForm.pdf');
+    } else {
+      alert('Please submit form');
+    }
   }
   
   updatePDF(form: Form):void {
     console.log(form);
+    this.isSubmitted = true;
     // need to remove the x if unselected
     if(form.Void) {
       this.pdf.text(67, 13, 'X');

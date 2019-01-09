@@ -20,5 +20,17 @@
         <i (click)="download()" class="fa fa-download fa-3x"></i>
       </span>
     </div>
+    <div class="column">
+      <span class="icon is-large">
+        <i (click)="save()" class="fa fa-save fa-3x"></i>
+      </span>
+      <p class="is-size-7">{{ actions.SaveButton }}</p>
+    </div>
+    <div class="column">
+      <span class="icon is-large">
+        <i (click)="clear()" class="fa fa-eraser fa-3x"></i>
+      </span>
+      <p class="is-size-7">{{ actions.ClearButton }}</p>
+    </div>
   </div>
 </section>

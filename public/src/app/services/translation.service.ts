@@ -6,7 +6,9 @@ import { TranslatedForm } from '../classes/translated-form';
 })
 export class TranslationService {
 
-  translatedForm: TranslatedForm;
+  translatedForm: TranslatedForm = new TranslatedForm();
+  isSigned: boolean = false;
+
   availableLanguages: Object = {
     'english': [
       'Reportable Winnings', 'Date won', ' WINNER\'s name', 'Street address', 'City, state and ZIP'
@@ -38,7 +40,19 @@ export class TranslationService {
     this.translatedForm = form;
   }
 
+  clearForm(): void {
+    this.translatedForm = new TranslatedForm();
+  }
+
   getForm(): TranslatedForm {
     return this.translatedForm;
+  }
+
+  getIsSigned(): boolean {
+    return this.isSigned;
+  }
+
+  setIsSigned(bool: boolean): void {
+    this.isSigned = bool;
   }
 }
