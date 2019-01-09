@@ -8,10 +8,11 @@ import { TranslatedForm } from 'src/app/classes/translated-form';
   selector: 'app-form',
   templateUrl: './form2.component.html',
   styleUrls: ['./form.component.scss']
-})
+})              
 export class FormComponent implements OnInit {
   form: Form = new Form();
   translatedForm: TranslatedForm;
+  @Input() selectedLanguage: any;
   @Input() signature: any;
   @Output() clearSign = new EventEmitter();
 

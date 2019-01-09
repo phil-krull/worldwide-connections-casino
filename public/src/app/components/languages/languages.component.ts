@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { PdfService } from 'src/app/services/pdf.service';
 import { TranslationService } from 'src/app/services/translation.service';
 
@@ -9,13 +9,16 @@ import { TranslationService } from 'src/app/services/translation.service';
 })
 export class LanguagesComponent implements OnInit {
 
+  @Output() flagSelected = new EventEmitter();
   constructor(private _translation: TranslationService) { }
 
   ngOnInit() {
   }
 
   getTranslation(language: string) {
-    this._translation.setTranslation(language);
+    // this will be changed to get the language from the api
+    // this._translation.setTranslation(language);
+    this.flagSelected.emit(language);
   }
 
 }

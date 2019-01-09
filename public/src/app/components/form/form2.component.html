@@ -1,223 +1,220 @@
-<section *ngIf="translatedForm" class="section is-size-4-desktop is-size-6-tablet">
+<section *ngIf="translatedForm" class="section is-size-5-desktop is-size-6-tablet">
     <div class="c12 r1 h6 w8">
         <p>3232</p>
     </div>
     <div class="c13 r1 h6 w8">
         <label class="checkbox">
             <input (change)="updateForm()" type="checkbox" [(ngModel)]="form.Void" name="Void">
-            {{ translatedForm.form.Void }}
+            {{ selectedLanguage.Void }}
         </label>
     </div>
     <div class="c14 r1 h6 w8">
         <label class="checkbox">
             <input (change)="updateForm()" type="checkbox" [(ngModel)]="form.Corrected" name="Corrected">
-            {{ translatedForm.form.Corrected }}
+            {{ selectedLanguage.Corrected }}
         </label>
     </div>
     <div class="c1 r2 h1 w1">
         <label for="Payer1">
-            {{ translatedForm.form.Payer1 }}
+            {{ selectedLanguage.Payer1 }}
         </label>
         <input (change)="updateForm()" type="string" [(ngModel)]="form.Payer1" name="Payer1" id="Payer1">
     </div>
     <div class="c1 r7 h2 w2">
         <label for="Payer2">
-            {{ translatedForm.form.Payer2 }}
+            {{ selectedLanguage.Payer2 }}
         </label>
         <input (change)="updateForm()" type="string" [(ngModel)]="form.Payer2" name="Payer2" id="Payer2">
     </div>
     <div class="c5 r7 h2 w2">
         <label for="Payer3">
-            {{ translatedForm.form.Payer3 }}
+            {{ selectedLanguage.Payer3 }}
         </label>
         <input (change)="updateForm()" type="string" [(ngModel)]="form.Payer3" name="Payer3" id="Payer3">
     </div>
     <div class="c8 r2 h2 w3">
         <label for="Reportings1">
-            1 {{ translatedForm.form.Reportings1 }}
+            1 {{ selectedLanguage.Reportings1 }}
         </label>
         <input (change)="updateForm()" type="number" [(ngModel)]="form.Reportings1" name="Reportings1" id="Reportings1">
     </div>
     <div class="c9 r2 h3 w3">
         <label for="Reportings2">
-            2 {{ translatedForm.form.Reportings2 }}
+            2 {{ selectedLanguage.Reportings2 }}
         </label>
         <input (change)="updateForm()" type="date" [(ngModel)]="form.Reportings2" name="Reportings2" id="Reportings2">
     </div>
     <div class="c8 r4 h3 w3">
         <label for="Reportings3">
-            3 {{ translatedForm.form.Reportings3 }}
+            3 {{ selectedLanguage.Reportings3 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings3" name="Reportings3" id="Reportings3">
     </div>
     <div class="c9 r4 h3 w3">
         <label for="Reportings4">
-            4 {{ translatedForm.form.Reportings4 }}
+            4 {{ selectedLanguage.Reportings4 }}
         </label>
         <input (change)="updateForm()" type="number" [(ngModel)]="form.Reportings4" name="Reportings4" id="Reportings4">
     </div>
     <div class="c8 r5 h3 w3">
         <label for="Reportings5">
-            5 {{ translatedForm.form.Reportings5 }}
+            5 {{ selectedLanguage.Reportings5 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings5" name="Reportings5" id="Reportings5">
     </div>
     <div class="c9 r5 h3 w3">
         <label for="Reportings6">
-            6 {{ translatedForm.form.Reportings6 }}
+            6 {{ selectedLanguage.Reportings6 }}
         </label>
         <input (change)="updateForm()" type="string" [(ngModel)]="form.Reportings6" name="Reportings6" id="Reportings6">
     </div>
     <div class="c8 r6 h3 w3">
         <label for="Reportings7">
-            7 {{ translatedForm.form.Reportings7 }}
+            7 {{ selectedLanguage.Reportings7 }}
         </label>
         <input (change)="updateForm()" type="number" [(ngModel)]="form.Reportings7" name="Reportings7" id="Reportings7">
     </div>
     <div class="c9 r6 h3 w3">
         <label for="Reportings8">
-            8 {{ translatedForm.form.Reportings8 }}
+            8 {{ selectedLanguage.Reportings8 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings8" name="Reportings8" id="Reportings8">
     </div>
     <div class="c8 r9 h3 w3">
         <label for="Reportings9">
-            9 {{ translatedForm.form.Reportings9 }}
+            9 {{ selectedLanguage.Reportings9 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings9" name="Reportings9" id="Reportings9">
     </div>
     <div class="c9 r9 h3 w3">
         <label for="Reportings10">
-            10 {{ translatedForm.form.Reportings10 }}
+            10 {{ selectedLanguage.Reportings10 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings10" name="Reportings10" id="Reportings10">
     </div>
     <div class="c8 r10 h3 w3">
         <label for="Reportings11">
-            11 {{ translatedForm.form.Reportings11 }}
+            11 {{ selectedLanguage.Reportings11 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings11" name="Reportings11" id="Reportings11">
     </div>
     <div class="c9 r10 h3 w3">
         <label for="Reportings12">
-            12 {{ translatedForm.form.Reportings12 }}
+            12 {{ selectedLanguage.Reportings12 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings12" name="Reportings12" id="Reportings12">
     </div>
     <div class="c8 r11 h3 w3">
         <label for="Reportings13">
-            13 {{ translatedForm.form.Reportings13 }}
+            13 {{ selectedLanguage.Reportings13 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings13" name="Reportings13" id="Reportings13">
     </div>
     <div class="c9 r11 h3 w3">
         <label for="Reportings14">
-            14 {{ translatedForm.form.Reportings14 }}
+            14 {{ selectedLanguage.Reportings14 }}
         </label>
         <input (change)="updateForm()" type="number" [(ngModel)]="form.Reportings14" name="Reportings14" id="Reportings14">
     </div>
     <div class="c8 r12 h3 w3">
         <label for="Reportings15">
-            15 {{ translatedForm.form.Reportings15 }}
+            15 {{ selectedLanguage.Reportings15 }}
         </label>
         <input (change)="updateForm()" type="number" [(ngModel)]="form.Reportings15" name="Reportings15" id="Reportings15">
     </div>
     <div class="c9 r12 h3 w3">
         <label for="Reportings16">
-            16 {{ translatedForm.form.Reportings16 }}
+            16 {{ selectedLanguage.Reportings16 }}
         </label>
         <input (change)="updateForm()" type="number" [(ngModel)]="form.Reportings16" name="Reportings16" id="Reportings16">
     </div>
     <div class="c8 r14 h3 w3">
         <label for="Reportings17">
-            17 {{ translatedForm.form.Reportings17 }}
+            17 {{ selectedLanguage.Reportings17 }}
         </label>
         <input (change)="updateForm()" type="number" [(ngModel)]="form.Reportings17" name="Reportings17" id="Reportings17">
     </div>
     <div class="c9 r14 h3 w3">
         <label for="Reportings18">
-            18 {{ translatedForm.form.Reportings18 }}
+            18 {{ selectedLanguage.Reportings18 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Reportings18" name="Reportings18" id="Reportings18">
     </div>
     <div class="c1 r10 h3 w1">
         <label for="Winner1">
-            {{ translatedForm.form.Winner1 }}
+            {{ selectedLanguage.Winner1 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Winner1" name="Winner1" id="Winner1">
     </div>
     <div class="c1 r11 h3 w1">
         <label for="Winner2">
-            {{ translatedForm.form.Winner2 }}
+            {{ selectedLanguage.Winner2 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Winner2" name="Winner2" id="Winner2">
     </div>
     <div class="c1 r12 h3 w1">
         <label for="Winner3">
-            {{ translatedForm.form.Winner3 }}
+            {{ selectedLanguage.Winner3 }}
         </label>
         <input (change)="updateForm()" type="text" [(ngModel)]="form.Winner3" name="Winner3" id="Winner3">
     </div>
-    <div class="c11 r2 h6 w4 has-text-right">
-        <p>
-            {{ translatedForm.form.Title1 }}
+    <div class="c11 r2 h6 w4 has-text-weight-bold has-text-right">
+        <p class="is-size-6-desktop">
+            {{ selectedLanguage.Title1 }}
         </p>
-        <h4 class="title has-text-weight-bold is-4 has-text-right">{{ translatedForm.form.Title2 }}</h4>
+        <h4 class="title has-text-weight-bold is-4 has-text-right">{{ selectedLanguage.Title2 }}</h4>
     </div>
     <div class="c11 r4 h6 w4 has-text-weight-bold has-text-right">
         <p>
-            {{ translatedForm.form.Title3 }}
+            {{ selectedLanguage.Title3 }}
         </p>
     </div>
     <div class="c11 r8 h8 w4 has-text-right">
-        <p>
-            {{ translatedForm.form.Title4 }}
+        <p class="is-size-7-desktop">
+            {{ selectedLanguage.Title4 }}
         </p>
     </div>
     <div class="c11 r19 h8 w4 has-text-weight-bold has-text-right">
         <p>
-            {{ translatedForm.form.Title5 }}
+            {{ selectedLanguage.Title5 }}
         </p>
     </div>
     <div class="c11 r12 h8 w4 has-text-weight-bold has-text-right">
-        <p>
-            {{ translatedForm.form.Title6 }}
+        <p class="is-size-7-desktop">
+            {{ selectedLanguage.Title6 }}
         </p>
     </div>
     <div class="c11 r14 h8 w4 has-text-weight-bold has-text-right">
-        <p>
-            {{ translatedForm.form.Title7 }}
+        <p class="is-size-7-desktop">
+            {{ selectedLanguage.Title7 }}
         </p>
     </div>
 
     <div class="c1 r16 h4 w7">
         <p for="Disclaimer">
-            {{ translatedForm.form.Disclaimer }}
+            {{ selectedLanguage.Disclaimer }}
         </p>
     </div>
     <div class="c1 r17 h3 w5">
-        <p>{{ translatedForm.form.SignatureArrow }}</p>
+        <p>{{ selectedLanguage.Signature }}</p>
     </div>
     <div *ngIf="signature" class="c2 r20 h3">
         <img class=".signature" [src]="signature" alt="Signature">
     </div>
     <div class="c8 r17 h3 w1">
-        <p>{{ translatedForm.form.DateArrow }}</p>
+        <p>{{ selectedLanguage.Date }}</p>
     </div>
-    <div class="c1 r18 h6 w9 has-text-right">
-        <p>{{ translatedForm.form.Bottom1 }}</p>
-    </div>
-    <div class="c2 r18 h6 w1 has-text-weight-bold">
-        <p>{{ translatedForm.form.Bottom2 }}</p>
+    <div class="c2 r18 h6 w9 has-text-right">
+        <p>{{ selectedLanguage.Bottom1a }}</p>
     </div>
     <div class="c4 r18 h6 w1">
-        <p>{{ translatedForm.form.Bottom3 }}</p>
+        <p>{{ selectedLanguage.Bottom2 }}</p>
     </div>
     <div class="c7 r18 h6 w1">
-        <p>{{ translatedForm.form.Bottom4 }}</p>
+        <p>{{ selectedLanguage.Bottom3 }}</p>
     </div>
     <div class="c10 r18 h6 w1">
-        <p>{{ translatedForm.form.Bottom5 }}</p>
+        <p>{{ selectedLanguage.Bottom4 }}</p>
     </div>
 </section>
 <div class="field is-grouped">

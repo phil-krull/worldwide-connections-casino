@@ -5,13 +5,13 @@
         <header class="has-text-centered">
           <h1 class='title is-1'>{{ title }}</h1>
         </header>
-        <app-form (clearSign)="setSignature()" [signature]="completedSignature"></app-form>
+        <app-form (clearSign)="setSignature()" [signature]="completedSignature" [selectedLanguage]="selectedFlag"></app-form>
         <!-- <app-identification></app-identification> -->
         <app-signature (formSigned)="setSignature($event)"></app-signature>
         <app-actions [isSigned]="signedForm"></app-actions>
       </div>
       <div class="column">
-        <app-languages></app-languages>
+        <app-languages (flagSelected)="changedLanguage($event)"></app-languages>
       </div>
     </div>
   </div>
