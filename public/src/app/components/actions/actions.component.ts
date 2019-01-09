@@ -26,12 +26,12 @@ export class ActionsComponent implements OnInit {
   }
 
   print() {
-    if(this.isSigned) {
-      this._pdf.printPDF();
-    } else {
-      alert('Please sign and submit form')
-    }
-    console.log('in print');
+    // if(this.isSigned) {
+    //   this._pdf.printPDF();
+    // } else {
+    //   alert('Please sign and submit form')
+    // }
+    // console.log('in print');
   }
 
   email() {
@@ -39,12 +39,12 @@ export class ActionsComponent implements OnInit {
   }
 
   download() {
-    if(this.isSigned) {
-      this._pdf.downloadPDF();
-    } else {
-      alert('Please sign and submit form');
-    }
-    console.log('in download');
+    // if(this.isSigned) {
+    //   this._pdf.downloadPDF();
+    // } else {
+    //   alert('Please sign and submit form');
+    // }
+    // console.log('in download');
   }
 
   save() {
