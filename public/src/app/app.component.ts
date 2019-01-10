@@ -9,7 +9,7 @@ import { PdfService } from './services/pdf.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'XXXX Casino';
+  title = 'Worldwide Casino';
   completedSignature: any;
   signedForm: boolean = false;
   selectedFlag: any;
