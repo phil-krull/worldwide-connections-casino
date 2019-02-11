@@ -213,9 +213,65 @@ export class TranslatedForm {
                 "SignatureButton2": "删除签名",
                 "SaveButton": "Submit",
                 "ClearButton": "Clear form"
+            },
+            "spanish": {
+                "Void": "INVÁLIDO",
+                "Corrected": "CORREGIDO",
+                "Payer1": "Nombre del PAGADOR, dirección, ciudad o pueblo, provincia o estado, país, y código postal local o extranjero.",
+                "Payer2": "Número de identificación federal del PAGADOR",
+                "Payer3": "Número de teléfono del PAGADOR",
+                "Winner1": "Nombre del GANADOR",
+                "Winner2": "Dirección postal (incluyendo no. de apto.)",
+                "Winner3": "Ciudad o pueblo, provincia o estado, país, y código postal local o extranjero",
+                "Winner4": "",
+                "Winner5": "",
+                "Winner6": "",
+                "Reportings1":"Ganancias declaradas",
+                "Reportings2":"Fecha de las ganancias",
+                "Reportings3":"Tipo de apuesta",
+                "Reportings4":"Impuesto federal sobre el ingreso retenido",
+                "Reportings5":"Transacción",
+                "Reportings6":"Carrera",
+                "Reportings7":"Ganancias de apuestas idénticas",
+                "Reportings8":"Cajero/a",
+                "Reportings9":"Número de identificación fiscal del ganador.",
+                "Reportings10":"Ventana",
+                "Reportings11":"Primer documento de identidad",
+                "Reportings12":"Segundo documento de identidad",
+                "Reportings13":"No. de identificación estatal del pagador.",
+                "Reportings14":"Ganancias estatales",
+                "Reportings15":"Impuesto estatal sobre ingresos retenido",
+                "Reportings16":"Ganancias Locales",
+                "Reportings17":"Impuesto local sobre ingresos retenido",
+                "Reportings18":"Nombre de la localidad",
+                "Title1": "OMB No. 1545-0238\n2019\nFormulario\nW-2G\nDeterminadas\nganancias en\napuestas",
+                "Title2": "",
+                "Title3": "",
+                "Title4": "Para el Aviso\nsobre la Ley de\nConfidencialidad de\nInformación y la Ley\nde Reducción de\nTrámites, consultar\nlas Instrucciones\nGenerales para\nDeterminadas\nDevoluciones de\nInformación\nde 2018.",
+                "Title5": "",
+                "Title6": "Presentar con el formulario 1096",
+                "Title7": "Copia A para el\nCentro de Servicios\nde Impuestos Internos",
+                "Disclaimer":"Bajo pena de perjurio, declaro que, a mi mejor saber y entender, el nombre, la dirección y el número de identificación del contribuyente que he proporcionado me identifican correctamente como el beneficiario de este pago y de cualquier pago de apuestas idénticas, y que ninguna otra persona tiene derecho a recibir parte alguna de estos pagos.",
+                "Signature":"Firma ▶",
+                "Date":" Fecha ▶",
+                "Bottom1":"",
+                "Bottom1a":"Formulario   W-2G",
+                "Bottom2":"Cat. No. 10138V",
+                "Bottom3":"www.irs.gov/FormW2G",
+                "Bottom4":"Departamento del Tesoro – Servicio de Impuestos Internos",
+                "SignatureButton1": "Save",
+                "SignatureButton2": "Clear signature",
+                "SaveButton": "Submit",
+                "ClearButton": "Clear form"
             }
         }
     }
+    
+
+
+
+
+
     
     constructor() {
         console.log(this);
